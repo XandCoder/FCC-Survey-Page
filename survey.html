@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title>Salinas Bakery</title>
+
+	<link rel="stylesheet" type="text/css" href="surveyStyles.css">
+
+</head>
+
+<body>
+
+	<div id="MainContainer">
+		
+		<form id="survey-form">
+			
+			<h1 id="title">Salinas Bakery</h1>
+			<p id="description">CUSTOMER SURVEY FORM</p>
+			<p id="instructions">Please fill out our survey form to enter our monthly pastry box raffle.  You must be 18 or older to participate.  Winner is picked on the last day of the month and announced on our home page.</p>
+			
+			<fieldset>
+				<p>
+					CONTACT INFO
+				</p>
+				<label id="name-label">Name:<br>
+					<input id="name" type="text" name="custName" minlength="3" maxlength="30" required placeholder="enter your name" /> 
+				</label><br>
+
+				<label id="email-label">Email:<br>
+					<input id="email" type="email" name="custEmail" maxlength="30" required placeholder="enter your email"/>
+				</label><br>
+
+				<label id="number-label">Age:<br>
+					<input id="number" type="number" name="custAge" required placeholder="18" min="18" max="100" />
+				</label>
+			</fieldset> <br>
+
+			<fieldset>
+				<p>
+					SURVEY FORM
+				</p>
+					
+					<p>
+						How often do you visit Salinas Bakery?
+						<br>
+						<label>
+							<input type="radio" name="visit" value="daily" />
+							daily
+						</label>
+						<label>
+							<input type="radio" name="visit" value="weekly" />
+							weekly
+						</label>
+						<label>
+							<input type="radio" name="visit" value="monthly" />
+							monthly
+						</label>
+											
+					</p><br>
+
+					
+					<p>
+						What time of day do you usually visit us?  (check all that apply)
+						<br>
+						<label>
+						  <input 
+                     name="visit" 
+                     value="morning" 
+                     type="checkbox"
+              />morning</label>
+            
+						<label>
+						  <input 
+                     name="visit" 
+                     value="afternoon" 
+                     type="checkbox" 
+              />afternoon</label>
+            
+						<label>
+						  <input 
+                     name="visit" 
+                     value="evening" 
+                     type="checkbox" 
+              />evening</label>
+					</p><br>
+					
+
+					<p>
+						How friendly was our staff?
+						<br>
+						<label>
+							<input type="radio" name="staff" value="veryFriendly" />
+							very friendly
+						</label>
+						<label>
+							<input type="radio" name="staff" value="average" />
+							average
+						</label>
+						<label>
+							<input type="radio" name="staff" value="rude" />
+							rude
+						</label>
+						
+					</p><br>
+
+					
+					<p>
+						How would you rate our selection of menu items?
+						<br>
+						<label>
+							<input type="radio" name="menu" value="excellent" />
+							exellent
+						</label>
+						<label>
+							<input type="radio" name="menu" value="averageVariety" />
+							average variety
+						</label>
+						<label>
+							<input type="radio" name="menu" value="noVariety" />
+							no variety
+						</label>
+						
+					</p><br>
+
+
+					<p>
+						<label for ="dropdown">
+						Which menu item is your favorite?
+						</label>
+						<select name="item" id="dropdown">
+							<option value="cake">cakes</option>
+							<option value="cookie">cookies</option>
+							<option value="muffin">muffins</option>
+							<option value="pastry">pastries</option>
+							<option value="bread">breads</option>
+							<option value="sandwich">sandwiches</option>
+							<option value="coffee">coffee</option>
+						</select>
+					</p><br>
+
+					<p>
+						How likey would you recommend us to a friend?
+						<br>
+						<label>
+							<input type="radio" name="recommend" value="veryLikely" />
+							very likely
+						</label>
+						<label>
+							<input type="radio" name="recommend" value="maybe" />
+							maybe
+						</label>
+						<label>
+							<input type="radio" name="recommend" value="never" />
+							never
+						</label>
+					</p><br>
+					
+
+					<p>
+						<label for="comments">
+							Suggestions or comments?
+						</label>
+						<br>
+						<textarea rows="4" cols="45" id="comments">
+						</textarea>
+					</p>
+
+					<p>
+						<label>
+							<input type="checkbox" id="subscribe" name="subscribe" value="subscribe" checked="yes" />
+							I would like email updates on specials.
+						</label>
+					</p><br>
+
+					
+					<button id="submit" type="submit" name="submit">Submit Raffle Entry</button>
+								
+						
+					</p>
+			</fieldset>
+
+			<footer>
+				<p>&copy; Suarez Designs 2021</p>
+			</footer>
+
+		</form>
+
+	</div>
+
+	<!--Script for FCC test-->
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	
+
+</body>
