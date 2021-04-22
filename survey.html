@@ -20,30 +20,36 @@
 			<p id="instructions">Please fill out our survey form to enter our monthly pastry box raffle.  You must be 18 or older to participate.  Winner is picked on the last day of the month and announced on our home page.</p>
 			
 			<fieldset>
-				<p>
+				<p class="subtitles">
 					CONTACT INFO
 				</p>
-				<label id="name-label">Name:<br>
-					<input id="name" type="text" name="custName" minlength="3" maxlength="30" required placeholder="enter your name" /> 
-				</label><br>
-
-				<label id="email-label">Email:<br>
-					<input id="email" type="email" name="custEmail" maxlength="30" required placeholder="enter your email"/>
-				</label><br>
-
-				<label id="number-label">Age:<br>
+				
+				<label id="name-label">
+					<p class="questions">Name:</p>
+					<input id="name" type="text" name="custName" minlength="3" maxlength="30" required placeholder="Customer Name" /> 
+				</label>
+								
+				<label id="email-label">
+					<p class="questions">Email:</p>
+					<input id="email" type="email" name="custEmail" maxlength="30" required placeholder="name@mail.com"/>
+				</label>
+								
+				<label id="number-label">
+					<p class="questions">Age:</p>
 					<input id="number" type="number" name="custAge" required placeholder="18" min="18" max="100" />
 				</label>
-			</fieldset> <br>
+			</fieldset> 
+			
 
 			<fieldset>
-				<p>
+				<p class="subtitles">
 					SURVEY FORM
 				</p>
 					
-					<p>
-						How often do you visit Salinas Bakery?
-						<br>
+					<div>
+						<p class="questions">
+							How often do you visit Salinas Bakery?
+						</P>
 						<label>
 							<input type="radio" name="visit" value="daily" />
 							daily
@@ -57,38 +63,39 @@
 							monthly
 						</label>
 											
-					</p><br>
+					</div>
+										
+					<div>
+						<p class="questions">
+							What time of day do you usually visit us? (check all that apply)
+						</p>
 
-					
-					<p>
-						What time of day do you usually visit us?  (check all that apply)
-						<br>
 						<label>
 						  <input 
-                     name="visit" 
-                     value="morning" 
-                     type="checkbox"
-              />morning</label>
+                     		name="visit" 
+                     		value="morning" 
+                     		type="checkbox"
+             		 		/>morning</label>
             
 						<label>
 						  <input 
-                     name="visit" 
-                     value="afternoon" 
-                     type="checkbox" 
-              />afternoon</label>
+                    		 name="visit" 
+                     		value="afternoon" 
+                     		type="checkbox" 
+              				/>afternoon</label>
             
 						<label>
 						  <input 
-                     name="visit" 
-                     value="evening" 
-                     type="checkbox" 
-              />evening</label>
-					</p><br>
+                     		name="visit" 
+                     		value="evening" 
+                     		type="checkbox" 
+              				/>evening</label>
+					</div>
 					
-
-					<p>
-						How friendly was our staff?
-						<br>
+					<div>
+						<p class="questions">
+							How friendly was our staff?
+						</p>
 						<label>
 							<input type="radio" name="staff" value="veryFriendly" />
 							very friendly
@@ -102,12 +109,12 @@
 							rude
 						</label>
 						
-					</p><br>
-
-					
-					<p>
-						How would you rate our selection of menu items?
-						<br>
+					</div>
+										
+					<div>
+						<p class="questions">
+							How would you rate our selection of menu items?
+						</p>
 						<label>
 							<input type="radio" name="menu" value="excellent" />
 							exellent
@@ -121,10 +128,9 @@
 							no variety
 						</label>
 						
-					</p><br>
-
-
-					<p>
+					</div>
+					
+					<div>
 						<label for ="dropdown">
 						Which menu item is your favorite?
 						</label>
@@ -137,11 +143,13 @@
 							<option value="sandwich">sandwiches</option>
 							<option value="coffee">coffee</option>
 						</select>
-					</p><br>
+					</div>
+					
 
-					<p>
-						How likey would you recommend us to a friend?
-						<br>
+					<div>
+						<p class="questions">
+							How likey would you recommend us to a friend?
+						</p>
 						<label>
 							<input type="radio" name="recommend" value="veryLikely" />
 							very likely
@@ -154,30 +162,27 @@
 							<input type="radio" name="recommend" value="never" />
 							never
 						</label>
-					</p><br>
+					</div> 
 					
 
-					<p>
+					<div>
 						<label for="comments">
 							Suggestions or comments?
 						</label>
-						<br>
+						
 						<textarea rows="4" cols="45" id="comments">
 						</textarea>
-					</p>
+					</div>
 
-					<p>
+					<div>
 						<label>
-							<input type="checkbox" id="subscribe" name="subscribe" value="subscribe" checked="yes" />
+							<input type="checkbox" id="subscribe" name="subscribe" value="subscribe" checked="checked" />
 							I would like email updates on specials.
 						</label>
-					</p><br>
+					</div>
 
-					
 					<button id="submit" type="submit" name="submit">Submit Raffle Entry</button>
 								
-						
-					</p>
 			</fieldset>
 
 			<footer>
